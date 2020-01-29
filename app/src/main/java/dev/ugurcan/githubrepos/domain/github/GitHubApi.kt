@@ -12,7 +12,9 @@ interface GitHubApi {
     fun getRepos(
         @Path("org") organization: String,
         @Query("per_page") pageSize: Int,
-        @Query("page") page: Int
+        @Query("page") page: Int,
+        @Query("client_id") clientId: String,
+        @Query("client_secret") clientSecret: String
     ): Observable<List<Repo>>
 
 }

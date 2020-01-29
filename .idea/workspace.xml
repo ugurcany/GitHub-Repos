@@ -6,42 +6,18 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="-&gt; GET https://api.github.com/orgs/square" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63bdf158-5f21-4288-8030-b04153150189" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinCodeInsightSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/GitHubReposApp.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/data/Repo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/data/State.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/di/GitHubModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/di/ViewModelModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/domain/github/GitHubApi.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/domain/github/GitHubRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/domain/github/GitHubRepositoryImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repodetail/RepoDetailAction.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repodetail/RepoDetailState.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repodetail/RepoDetailViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repolist/RepoListAction.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repolist/RepoListChange.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repolist/RepoListState.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repolist/RepoListViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/ui/repodetail/RepoDetailActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/ui/repolist/RepoListActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/ui/repolist/RepoListAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_repodetail.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_repolist.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_repolist_item.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/Config.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/data/Repo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/data/Repo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/domain/github/GitHubApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/domain/github/GitHubApi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/domain/github/GitHubRepositoryImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/domain/github/GitHubRepositoryImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/ui/repodetail/RepoDetailActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/ui/repodetail/RepoDetailActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/ui/repolist/RepoListActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/ui/repolist/RepoListActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_repodetail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_repodetail.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,17 +49,76 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/ui/repodetail/RepoDetailActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="17" column="52" lean-forward="true" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+            <state relative-caret-position="304">
+              <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/di/ViewModelModule.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="380">
+              <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+              <folding>
+                <element signature="e#451#469#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="android-manifest" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_repodetail.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-150">
+              <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/domain/github/GitHubApi.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/Config.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="30" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/data/Repo.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="49" lean-forward="true" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/domain/github/GitHubRepositoryImpl.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="6" column="81" lean-forward="true" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/domain/github/GitHubRepository.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -91,71 +126,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/ui/repolist/RepoListActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="71" selection-end-column="5" />
+            <state relative-caret-position="317">
+              <caret line="43" column="62" lean-forward="true" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repodetail/RepoDetailViewModel.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/ui/repolist/RepoListAdapter.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repolist/RepoListViewModel.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="49" column="78" lean-forward="true" selection-start-line="49" selection-start-column="78" selection-end-line="49" selection-end-column="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repolist/RepoListChange.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repolist/RepoListState.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repodetail/RepoDetailState.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="6" column="26" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repodetail/RepoDetailAction.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="29" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repolist/RepoListAction.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-end-line="6" />
+            <state relative-caret-position="228">
+              <caret line="12" column="14" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="14" />
+              <folding>
+                <element signature="e#45#294#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -183,7 +167,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/data/State.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/di/NewsModule.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/domain/github/GitHubRepository.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/domain/github/GitHubRepositoryImpl.kt" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repolist/RepoListAction.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repolist/RepoListChange.kt" />
@@ -194,19 +177,21 @@
         <option value="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/ui/repolist/RepoListAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/di/GitHubModule.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_repolist.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/ui/repolist/RepoListActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/domain/github/GitHubApi.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_repodetail.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/view_repolist_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/data/Repo.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repodetail/RepoDetailAction.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repolist/RepoListState.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repodetail/RepoDetailState.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/ui/repodetail/RepoDetailActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/di/ViewModelModule.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repolist/RepoListViewModel.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repodetail/RepoDetailViewModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/data/Repo.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_repodetail.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/ui/repodetail/RepoDetailActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/ui/repolist/RepoListActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/domain/github/GitHubApi.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/Config.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/domain/github/GitHubRepositoryImpl.kt" />
       </list>
     </option>
   </component>
@@ -396,6 +381,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3a_API_29" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-01-29T13:48:24.725Z" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
@@ -405,9 +392,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="dev.ugurcan.githubrepos" />
       <recent name="dev.ugurcan.githubrepos.presentation.repodetail" />
       <recent name="dev.ugurcan.githubrepos.ui.repodetail" />
-      <recent name="dev.ugurcan.githubrepos" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
@@ -503,11 +490,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-124" y="-1056" width="1919" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.32924882" />
-      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4984375" visible="true" weight="0.32924882" />
+      <window_info id="Structure" order="2" sideWeight="0.5015625" side_tool="true" weight="0.32924882" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="5" />
@@ -516,11 +502,11 @@
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Find" />
       <window_info anchor="bottom" id="Run" order="0" />
-      <window_info anchor="bottom" id="Logcat" order="1" visible="true" weight="0.32948583" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="1" visible="true" weight="0.32948583" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Android Profiler" order="3" />
       <window_info anchor="bottom" id="Debug" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="5" />
+      <window_info anchor="bottom" id="Terminal" order="5" weight="0.32948583" />
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Build" order="8" weight="0.32843652" />
@@ -543,13 +529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/domain/github/GitHubRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -578,23 +557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="32" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/ui/repolist/RepoListAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="21" />
-          <folding>
-            <element signature="e#45#294#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/domain/github/GitHubApi.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -630,20 +592,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_repodetail.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="50" column="43" lean-forward="true" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
-          <folding>
-            <element signature="e#357#381#0" expanded="true" />
-            <element signature="e#1111#1132#0" expanded="true" />
-            <element signature="e#1694#1718#0" expanded="true" />
-            <element signature="e#2361#2381#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/di/GitHubModule.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -651,25 +599,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repolist/RepoListAction.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/data/Repo.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -694,10 +627,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/ui/repolist/RepoListActivity.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repolist/RepoListChange.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="71" selection-end-column="5" />
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repolist/RepoListViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="49" column="78" lean-forward="true" selection-start-line="49" selection-start-column="78" selection-end-line="49" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repodetail/RepoDetailViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/ui/repolist/RepoListAdapter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="14" />
+          <folding>
+            <element signature="e#45#294#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-29/android/content/Intent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="6393" column="11" selection-start-line="6393" selection-start-column="11" selection-end-line="6393" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -710,36 +674,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/ui/repodetail/RepoDetailActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="17" column="52" lean-forward="true" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+        <state relative-caret-position="304">
+          <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/data/Repo.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="49" lean-forward="true" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/ui/repolist/RepoListActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="43" column="62" lean-forward="true" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/Config.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_repodetail.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150">
+          <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+          <folding>
+            <element signature="e#451#469#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/domain/github/GitHubApi.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/domain/github/GitHubRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/domain/github/GitHubRepositoryImpl.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repodetail/RepoDetailViewModel.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repolist/RepoListChange.kt">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/dev/ugurcan/githubrepos/presentation/repolist/RepoListViewModel.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="49" column="78" lean-forward="true" selection-start-line="49" selection-start-column="78" selection-end-line="49" selection-end-column="78" />
+          <caret line="6" column="81" lean-forward="true" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
         </state>
       </provider>
     </entry>

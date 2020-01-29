@@ -1,5 +1,6 @@
 package dev.ugurcan.githubrepos.ui.repolist
 
+import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
 import android.widget.Toast
@@ -13,6 +14,7 @@ import dev.ugurcan.githubrepos.data.State
 import dev.ugurcan.githubrepos.presentation.repolist.RepoListAction
 import dev.ugurcan.githubrepos.presentation.repolist.RepoListState
 import dev.ugurcan.githubrepos.presentation.repolist.RepoListViewModel
+import dev.ugurcan.githubrepos.ui.repodetail.RepoDetailActivity
 import kotlinx.android.synthetic.main.activity_repolist.*
 import org.koin.android.viewmodel.ext.android.viewModel
 
@@ -48,6 +50,12 @@ class RepoListActivity : AppCompatActivity() {
                 loadData(true)
             }
             it.isAutoLoadMore = true
+        }
+
+        adapter.setOnItemClickListener { adapter, _, position ->
+            val intent = Intent(this, RepoDetailActivity::class.java)
+            intent.putExtra(RepoDetailActivity.KEY_REPO, adapter.getItem(position) as Repo)
+            startActivity(intent)
         }
 
         recyclerView.layoutManager = when (resources.configuration.orientation) {

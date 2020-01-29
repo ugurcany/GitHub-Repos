@@ -8,30 +8,30 @@
 
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/textViewRepoName"
+        android:id="@+id/textViewRepoDetailName"
         style="@style/TextAppearance.AppCompat.Headline"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toStartOf="@id/textViewRepoStarCount"
+        app:layout_constraintEnd_toStartOf="@id/textViewRepoDetailStarCount"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Name" />
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/textViewRepoDescription"
+        android:id="@+id/textViewRepoDetailDescription"
         style="@style/TextAppearance.AppCompat.Body1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/padding_tiny"
-        app:layout_constraintEnd_toEndOf="@id/textViewRepoName"
+        app:layout_constraintEnd_toEndOf="@id/textViewRepoDetailName"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewRepoName"
+        app:layout_constraintTop_toBottomOf="@id/textViewRepoDetailName"
         tools:text="Description" />
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/textViewRepoStarCount"
+        android:id="@+id/textViewRepoDetailStarCount"
         style="@style/TextAppearance.AppCompat.Headline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,20 +39,20 @@
         android:gravity="center"
         android:minWidth="50dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/textViewRepoStarCaption"
+        app:layout_constraintBottom_toTopOf="@id/textViewRepoDetailStarCaption"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/textViewRepoName"
+        app:layout_constraintStart_toEndOf="@id/textViewRepoDetailName"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="000" />
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/textViewRepoStarCaption"
+        android:id="@+id/textViewRepoDetailStarCaption"
         style="@style/TextAppearance.AppCompat.Caption"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/star_count"
-        app:layout_constraintEnd_toEndOf="@id/textViewRepoStarCount"
-        app:layout_constraintStart_toStartOf="@id/textViewRepoStarCount"
-        app:layout_constraintTop_toBottomOf="@id/textViewRepoStarCount" />
+        app:layout_constraintEnd_toEndOf="@id/textViewRepoDetailStarCount"
+        app:layout_constraintStart_toStartOf="@id/textViewRepoDetailStarCount"
+        app:layout_constraintTop_toBottomOf="@id/textViewRepoDetailStarCount" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
