@@ -1,10 +1,13 @@
 package dev.ugurcan.githubrepos.ui.repodetail
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import dev.ugurcan.githubrepos.R
 import dev.ugurcan.githubrepos.data.Repo
+import dev.ugurcan.githubrepos.data.State
+import dev.ugurcan.githubrepos.presentation.repodetail.RepoDetailAction
 import dev.ugurcan.githubrepos.presentation.repodetail.RepoDetailState
 import dev.ugurcan.githubrepos.presentation.repodetail.RepoDetailViewModel
 import kotlinx.android.synthetic.main.activity_repodetail.*
@@ -27,19 +30,35 @@ class RepoDetailActivity : AppCompatActivity() {
         viewModel.observableState.observe(this, Observer { state ->
             state?.let { renderState(state) }
         })
+
+        viewModel.dispatch(RepoDetailAction.IsRepoBookmarked(repo))
     }
 
     private fun initUI() {
         textViewRepoDetailName.text = repo.name
         textViewRepoDetailDescription.text = repo.description
         textViewRepoDetailStarCount.text = "${repo.starCount}"
+        buttonRepoBookmark.setOnClickListener {
+            viewModel.dispatch(RepoDetailAction.BookmarkRepo(repo))
+        }
     }
 
     private fun renderState(state: RepoDetailState) {
         when (state.state) {
-            /*State.LOADING -> renderLoading()
-            State.ERROR -> renderError(state.errorMessage)
-            else -> renderData(state.repoList)*/
+            State.LOADING -> {
+                buttonRepoBookmark.isEnabled = false
+            }
+            State.DATA -> {
+                buttonRepoBookmark.text =
+                    getString(if (state.isBookmarked) R.string.bookmarked else R.string.bookmark)
+                buttonRepoBookmark.isEnabled = true
+            }
+            State.ERROR -> {
+                Toast.makeText(this, state.errorMessage, Toast.LENGTH_SHORT).show()
+                buttonRepoBookmark.isEnabled = true
+            }
+            else -> {
+            }
         }
     }
 

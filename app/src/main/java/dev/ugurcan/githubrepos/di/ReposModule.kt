@@ -1,9 +1,11 @@
 package dev.ugurcan.githubrepos.di
 
+import androidx.room.Room
 import com.google.gson.GsonBuilder
-import dev.ugurcan.githubrepos.domain.github.GitHubApi
-import dev.ugurcan.githubrepos.domain.github.GitHubRepository
-import dev.ugurcan.githubrepos.domain.github.GitHubRepositoryImpl
+import dev.ugurcan.githubrepos.domain.repos.RepoRepository
+import dev.ugurcan.githubrepos.domain.repos.RepoRepositoryImpl
+import dev.ugurcan.githubrepos.domain.repos.api.GitHubApi
+import dev.ugurcan.githubrepos.domain.repos.db.RepoDb
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.dsl.module
@@ -11,7 +13,7 @@ import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 
-val gitHubModule = module {
+val reposModule = module {
     // single instance of GitHubApi
     single<GitHubApi> {
         val client = OkHttpClient.Builder()
@@ -34,6 +36,14 @@ val gitHubModule = module {
         retrofit.create(GitHubApi::class.java)
     }
 
-    // single instance of GitHubRepository
-    single<GitHubRepository> { GitHubRepositoryImpl(get()) }
+    // single instance of RepoDb
+    single<RepoDb> {
+        Room.databaseBuilder(
+            get(),
+            RepoDb::class.java, "repos-db"
+        ).build()
+    }
+
+    // single instance of RepoRepository
+    single<RepoRepository> { RepoRepositoryImpl(get(), get()) }
 }

@@ -3,14 +3,14 @@ package dev.ugurcan.githubrepos.presentation.repolist
 import com.ww.roxie.BaseViewModel
 import com.ww.roxie.Reducer
 import dev.ugurcan.githubrepos.data.State
-import dev.ugurcan.githubrepos.domain.github.GitHubRepository
+import dev.ugurcan.githubrepos.domain.repos.RepoRepository
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.rxkotlin.ofType
 import io.reactivex.rxkotlin.plusAssign
 import io.reactivex.schedulers.Schedulers
 import timber.log.Timber
 
-class RepoListViewModel(private val gitHubRepository: GitHubRepository) :
+class RepoListViewModel(private val repoRepository: RepoRepository) :
     BaseViewModel<RepoListAction, RepoListState>() {
 
     override val initialState = RepoListState(state = State.IDLE)
@@ -45,7 +45,7 @@ class RepoListViewModel(private val gitHubRepository: GitHubRepository) :
     private fun bindActions() {
         val loadReposChange = actions.ofType<RepoListAction.LoadRepos>()
             .switchMap {
-                gitHubRepository.loadRepos(organization = it.organization, pageSize = pageSize, page = page)
+                repoRepository.loadRepos(organization = it.organization, pageSize = pageSize, page = page)
                     .subscribeOn(Schedulers.io())
                     .map<RepoListChange> { data -> RepoListChange.Data(data) }
                     .defaultIfEmpty(RepoListChange.Data(emptyList()))

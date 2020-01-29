@@ -7,5 +7,5 @@ import org.koin.dsl.module
 
 val vmModule = module {
     viewModel { RepoListViewModel(get()) }
-    viewModel { RepoDetailViewModel() }
+    viewModel { RepoDetailViewModel(get()) }
 }

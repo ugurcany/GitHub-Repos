@@ -1,8 +1,9 @@
 package dev.ugurcan.githubrepos.presentation.repodetail
 
 import com.ww.roxie.BaseAction
+import dev.ugurcan.githubrepos.data.Repo
 
 sealed class RepoDetailAction : BaseAction {
-    object IsRepoBookmarked : RepoDetailAction()
-    data class BookmarkRepo(val repoId: String, val shouldBookmark: Boolean) : RepoDetailAction()
+    data class IsRepoBookmarked(val repo: Repo) : RepoDetailAction()
+    data class BookmarkRepo(val repo: Repo) : RepoDetailAction()
 }

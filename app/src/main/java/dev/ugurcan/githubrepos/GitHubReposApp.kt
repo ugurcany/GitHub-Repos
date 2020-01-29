@@ -2,7 +2,7 @@ package dev.ugurcan.githubrepos
 
 import android.app.Application
 import com.ww.roxie.Roxie
-import dev.ugurcan.githubrepos.di.gitHubModule
+import dev.ugurcan.githubrepos.di.reposModule
 import dev.ugurcan.githubrepos.di.vmModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -30,7 +30,7 @@ class GitHubReposApp : Application() {
             // Android context
             androidContext(this@GitHubReposApp)
             // modules
-            modules(listOf(vmModule, gitHubModule))
+            modules(listOf(vmModule, reposModule))
         }
     }
 }

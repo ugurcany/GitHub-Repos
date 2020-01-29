@@ -1,4 +1,4 @@
-package dev.ugurcan.githubrepos.domain.github
+package dev.ugurcan.githubrepos.domain.repos.api
 
 import dev.ugurcan.githubrepos.data.Repo
 import io.reactivex.Observable
