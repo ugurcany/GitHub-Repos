@@ -10,5 +10,6 @@ data class Repo(
     @PrimaryKey val id: Int,
     val name: String,
     val description: String,
-    @SerializedName("stargazers_count") val starCount: Int
+    @SerializedName("stargazers_count") val starCount: Int,
+    var isBookmarked: Boolean
 ) : Serializable

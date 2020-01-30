@@ -38,10 +38,9 @@ val reposModule = module {
 
     // single instance of RepoDb
     single<RepoDb> {
-        Room.databaseBuilder(
-            get(),
-            RepoDb::class.java, "repos-db"
-        ).build()
+        Room.databaseBuilder(get(), RepoDb::class.java, "repos-db")
+            .fallbackToDestructiveMigration()
+            .build()
     }
 
     // single instance of RepoRepository

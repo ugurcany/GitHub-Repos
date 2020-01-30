@@ -6,5 +6,5 @@ import io.reactivex.Observable
 interface RepoRepository {
     fun loadRepos(organization: String, pageSize: Int, page: Int): Observable<List<Repo>>
     fun isRepoBookmarked(repo: Repo): Observable<Repo>
-    fun bookmarkRepo(repo: Repo, shouldBookmark: Boolean): Observable<Boolean>
+    fun bookmarkRepo(repo: Repo, shouldBookmark: Boolean): Observable<Repo>
 }

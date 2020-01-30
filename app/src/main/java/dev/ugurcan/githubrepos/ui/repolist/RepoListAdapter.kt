@@ -13,5 +13,13 @@ class RepoListAdapter :
         helper.setText(R.id.textViewRepoName, item?.name)
         helper.setText(R.id.textViewRepoDescription, item?.description)
         helper.setText(R.id.textViewRepoStarCount, "${item?.starCount}")
+        helper.setVisible(R.id.imageViewRepoBookmarked, item?.isBookmarked ?: false)
+    }
+
+    fun updateData(repo: Repo) {
+        val repoInList = data.find { it.id == repo.id }
+        if (repoInList != null) {
+            setData(data.indexOf(repoInList), repo)
+        }
     }
 }

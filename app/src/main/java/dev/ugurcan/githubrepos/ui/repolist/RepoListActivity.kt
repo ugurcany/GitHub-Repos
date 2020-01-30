@@ -55,7 +55,7 @@ class RepoListActivity : AppCompatActivity() {
         adapter.setOnItemClickListener { adapter, _, position ->
             val intent = Intent(this, RepoDetailActivity::class.java)
             intent.putExtra(RepoDetailActivity.KEY_REPO, adapter.getItem(position) as Repo)
-            startActivity(intent)
+            startActivityForResult(intent, RepoDetailActivity.ACTIVITY_REQUEST_CODE)
         }
 
         recyclerView.layoutManager = when (resources.configuration.orientation) {
@@ -102,6 +102,16 @@ class RepoListActivity : AppCompatActivity() {
                 adapter.loadMoreModule?.loadMoreEnd()
             else
                 adapter.loadMoreModule?.loadMoreComplete()
+        }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == RepoDetailActivity.ACTIVITY_REQUEST_CODE
+            && resultCode == RepoDetailActivity.ACTIVITY_RESULT_CODE
+        ) {
+            val repo = data?.getSerializableExtra(RepoDetailActivity.KEY_REPO) as Repo
+            adapter.updateData(repo)
         }
     }
 }

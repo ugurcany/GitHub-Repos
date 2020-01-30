@@ -19,13 +19,11 @@ class RepoDetailViewModel(private val repoRepository: RepoRepository) :
     private val reducer: Reducer<RepoDetailState, RepoDetailChange> = { state, change ->
         when (change) {
             is RepoDetailChange.Loading -> state.copy(
-                state = State.LOADING,
-                errorMessage = ""
+                state = State.LOADING
             )
-            is RepoDetailChange.IsRepoBookmarked -> state.copy(
+            is RepoDetailChange.Data -> state.copy(
                 state = State.DATA,
-                isBookmarked = change.isBookmarked,
-                errorMessage = ""
+                repo = change.repo
             )
             is RepoDetailChange.Error -> state.copy(
                 state = State.ERROR,
@@ -39,32 +37,28 @@ class RepoDetailViewModel(private val repoRepository: RepoRepository) :
     }
 
     private fun bindActions() {
-        val isRepoBookmarkChange = actions.ofType<RepoDetailAction.IsRepoBookmarked>()
+        val setRepoChange = actions.ofType<RepoDetailAction.SetRepo>()
             .switchMap {
                 repoRepository.isRepoBookmarked(repo = it.repo)
                     .subscribeOn(Schedulers.io())
-                    .map<RepoDetailChange> { RepoDetailChange.IsRepoBookmarked(true) }
-                    .onErrorReturn { RepoDetailChange.IsRepoBookmarked(false) }
+                    .map<RepoDetailChange> { repo -> RepoDetailChange.Data(repo) }
+                    .onErrorReturn { throwable -> RepoDetailChange.Error(throwable) }
                     .startWith(RepoDetailChange.Loading)
             }
 
         val bookmarkRepoChange = actions.ofType<RepoDetailAction.BookmarkRepo>()
             .switchMap {
                 repoRepository.bookmarkRepo(
-                    repo = it.repo,
-                    shouldBookmark = state.value?.isBookmarked?.not() ?: true
+                    repo = state.value?.repo!!,
+                    shouldBookmark = state.value?.repo?.isBookmarked?.not() ?: true
                 )
                     .subscribeOn(Schedulers.io())
-                    .map<RepoDetailChange> { bookmarked ->
-                        RepoDetailChange.IsRepoBookmarked(
-                            bookmarked
-                        )
-                    }
+                    .map<RepoDetailChange> { repo -> RepoDetailChange.Data(repo) }
                     .onErrorReturn { throwable -> RepoDetailChange.Error(throwable) }
                     .startWith(RepoDetailChange.Loading)
             }
 
-        val allChanges = Observable.merge(isRepoBookmarkChange, bookmarkRepoChange)
+        val allChanges = Observable.merge(setRepoChange, bookmarkRepoChange)
 
         disposables += allChanges
             .scan(initialState, reducer)

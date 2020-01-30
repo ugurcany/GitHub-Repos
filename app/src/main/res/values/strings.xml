@@ -4,6 +4,6 @@
 
     <string name="star_count">stars</string>
     <string name="bookmark">Bookmark</string>
-    <string name="bookmarked">Bookmarked!</string>
+    <string name="remove_bookmark">Remove Bookmark</string>
 
 </resources>
