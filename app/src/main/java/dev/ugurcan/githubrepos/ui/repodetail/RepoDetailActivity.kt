@@ -24,15 +24,16 @@ class RepoDetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_repodetail)
+        val repo = intent.getSerializableExtra(KEY_REPO) as Repo
+
         buttonRepoBookmark.setOnClickListener {
-            viewModel.dispatch(RepoDetailAction.BookmarkRepo)
+            viewModel.dispatch(RepoDetailAction.BookmarkRepo(repo))
         }
 
         viewModel.observableState.observe(this, Observer { state ->
             state?.let { renderState(state) }
         })
 
-        val repo = intent.getSerializableExtra(KEY_REPO) as Repo
         viewModel.dispatch(RepoDetailAction.SetRepo(repo))
     }
 

@@ -48,10 +48,7 @@ class RepoDetailViewModel(private val repoRepository: RepoRepository) :
 
         val bookmarkRepoChange = actions.ofType<RepoDetailAction.BookmarkRepo>()
             .switchMap {
-                repoRepository.bookmarkRepo(
-                    repo = state.value?.repo!!,
-                    shouldBookmark = state.value?.repo?.isBookmarked?.not() ?: true
-                )
+                repoRepository.toggleBookmark(repo = state.value?.repo ?: it.repo)
                     .subscribeOn(Schedulers.io())
                     .map<RepoDetailChange> { repo -> RepoDetailChange.Data(repo) }
                     .onErrorReturn { throwable -> RepoDetailChange.Error(throwable) }

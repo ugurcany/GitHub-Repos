@@ -5,5 +5,5 @@ import dev.ugurcan.githubrepos.data.Repo
 
 sealed class RepoDetailAction : BaseAction {
     data class SetRepo(val repo: Repo) : RepoDetailAction()
-    object BookmarkRepo : RepoDetailAction()
+    data class BookmarkRepo(val repo: Repo) : RepoDetailAction()
 }

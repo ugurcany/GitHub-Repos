@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GitHub Repos.iml" filepath="$PROJECT_DIR$/GitHub Repos.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/GitHub-Repos.iml" filepath="$PROJECT_DIR$/.idea/GitHub-Repos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GitHub-Repos-GitHub Repos.iml" filepath="$PROJECT_DIR$/GitHub-Repos-GitHub Repos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/GitHub-Repos-app.iml" filepath="$PROJECT_DIR$/app/GitHub-Repos-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

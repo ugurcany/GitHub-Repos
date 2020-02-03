@@ -30,14 +30,16 @@ class RepoRepositoryImpl(private val gitHubApi: GitHubApi, private val repoDb: R
             .toObservable()
     }
 
-    override fun bookmarkRepo(repo: Repo, shouldBookmark: Boolean): Observable<Repo> {
-        repo.isBookmarked = shouldBookmark
+    override fun toggleBookmark(repo: Repo): Observable<Repo> {
+        val shouldBookmark = repo.isBookmarked.not()
 
         return if (shouldBookmark) {
+           repo.apply { isBookmarked = true }
             repoDb.repoDao().insert(repo)
                 .map { repo }
                 .toObservable()
         } else {
+            repo.apply { isBookmarked = false }
             repoDb.repoDao().delete(repo)
                 .map { repo }
                 .toObservable()
