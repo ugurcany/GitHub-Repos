@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">GitHub Repos</string>
+
+    <string name="star_count">stars</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="remove_bookmark">Remove Bookmark</string>
+
+</resources>
